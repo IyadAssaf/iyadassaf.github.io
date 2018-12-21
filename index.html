@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <title>iyadiscool</title>
+  <style>
+    body {
+      margin: 0;
+      background: blue;
+      transition: background .5s;
+
+      font-family: 'Bungee', cursive;
+      color: white;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    .item {
+      color: white;
+      font-weight: bold;
+      align-self: center;
+      font-size: 3em;
+    }
+  </style>
+  <script>
+    var colors = ['green', 'orange', 'blue'];
+    var active = 0;
+    setInterval(function () {
+      document.querySelector('body').style.background = colors[active];
+      active++;
+      if (active == colors.length) active = 0;
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      iyadiscool
+    </div>
+  </div>
+</body>
+</html>
